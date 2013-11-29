@@ -3,13 +3,14 @@
 #include <fstream>
 #include <vector>
 #include <boost/asio.hpp>
-#include <boost/filesystem.hpp>
+#include "OsakanaTools.h"
 #include "TideService.h"
 #include "TideParser.h"
 #include "SunriseSunset.h"
 
 using namespace std;
 using namespace boost::asio::ip;
+using namespace osakanatools;
 
 namespace tideservice {
 
@@ -78,8 +79,8 @@ namespace tideservice {
 		} catch (std::exception& e) {
 			std::cout << "Exception: " << e.what() << "\n";
 
-			if(boost::filesystem::exists(filename))
-				boost::filesystem::remove(filename);
+			if(file_exists(filename))
+				std::remove(filename.c_str());
 
 			return -1;
 		}
