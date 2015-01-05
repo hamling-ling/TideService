@@ -2,6 +2,7 @@
 #include <ctime>
 #include <fstream>
 #include <vector>
+#include <iostream>
 #include <boost/asio.hpp>
 #include "OsakanaTools.h"
 #include "TideService.h"

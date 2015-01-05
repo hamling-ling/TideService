@@ -4,8 +4,8 @@
 #include "TideTypes.h"
 #include <string>
 
-#define DEFAULT_HOST		"www.data.kishou.go.jp"
-#define DEFAULT_HOSTPATH	"/db/tide/suisan/txt/"
+#define DEFAULT_HOST		"www.data.jma.go.jp"
+#define DEFAULT_HOSTPATH	"/gmd/kaiyou/data/db/tide/suisan/txt/"
 
 namespace tideservice {
 
